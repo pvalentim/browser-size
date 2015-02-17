@@ -1,6 +1,6 @@
 {
   "name": "browser-size",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get the window size of the browser and throttled resize events.",
   "main": "dist/index.js",
   "scripts": {
