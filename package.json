@@ -5,19 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "babel index.js > dist/index.js",
-    "test": "browserify test/index.js | testling -u"
-  },
-  "testling": {
-    "browsers": [
-      "ie/10"
-      "firefox/latest",
-      "chrome/latest",
-      "safari/6..latest",
-      "iphone/latest",
-      "ipad/latest",
-      "android-browser/latest"
-    ],
-    "files": "test/index.js"
+    "test": "browserify test/index.js | tape-run"
   },
   "repository": {
     "type": "git",
@@ -41,6 +29,7 @@
   },
   "devDependencies": {
     "babel": "^4.0.2",
-    "tape": "^3.5.0"
+    "tape": "^3.5.0",
+    "tape-run": "^0.3.0"
   }
 }
