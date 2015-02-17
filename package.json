@@ -4,7 +4,20 @@
   "description": "Get the window size of the browser and throttled resize events.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "babel index.js > dist/index.js",
+    "test": "browserify test/index.js | testling -u"
+  },
+  "testling": {
+    "browsers": [
+      "ie/10"
+      "firefox/latest",
+      "chrome/latest",
+      "safari/6..latest",
+      "iphone/latest",
+      "ipad/latest",
+      "android-browser/latest"
+    ],
+    "files": "test/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +34,13 @@
   "bugs": {
     "url": "https://github.com/pvalentim/browser-size/issues"
   },
-  "homepage": "https://github.com/pvalentim/browser-size"
+  "homepage": "https://github.com/pvalentim/browser-size",
+  "dependencies": {
+    "lodash.throttle": "^3.0.1",
+    "pragma-singleton": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel": "^4.0.2",
+    "tape": "^3.5.0"
+  }
 }

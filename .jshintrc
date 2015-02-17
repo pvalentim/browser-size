@@ -1,0 +1,5 @@
+{
+  "esnext": true,
+  "quotmark": "single",
+  "asi": true
+}
