@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "babel index.js > dist/index.js",
-    "test": "browserify test/index.js | tape-run"
+    "test": "browserify test/index.js | tape-run --browser phantom"
   },
   "repository": {
     "type": "git",
